@@ -1,20 +1,25 @@
 var btntranslate=document.querySelector("#btn-translate");
 var txtInput=document.querySelector("#txtInput");
 var outputDiv=document.querySelector("#output");
-var serverURL = 'https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json'
+var serverURL = 'https://api.funtranslations.com/translate/shakespeare.json'
 
 
-btntranslate.addEventListener("click", clickEventHandler);
 
 function getTranslationURL(text){
-    return serverURL+"?"+text
+    return serverURL+"?"+"text="+text
 }
 
 function clickEventHandler(){
-   var inputText=txtInput.ariaValueNow;
+    //take input
+    var inputText=txtInput.value; 
    fetch(getTranslationURL(inputText))
     .then(Response => Response.json())
-    .then(json => console.log(json))
+    // outputs in console -> .then(json => console.log(json.contents.translated)) 
+    .then(json => {
+        var translatedText=json.contents.translated;
+        outputDiv.innerText=translatedText;
+    })
 
+};
 
-}
+btntranslate.addEventListener("click", clickEventHandler);
