@@ -1,7 +1,7 @@
 var btntranslate=document.querySelector("#btn-translate");
 var txtInput=document.querySelector("#txtInput");
 var outputDiv=document.querySelector("#output");
-var serverURL = 'https://api.funtranslations.com/translate/shakespeare.json'
+var serverURL = 'https://api.funtranslations.com/translate/minion.json'
 
 
 

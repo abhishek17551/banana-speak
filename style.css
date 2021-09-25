@@ -1,0 +1,68 @@
+:root {
+    --primary-dark-gray: #111827;
+    --primary-light-yellow: #FEF3C7;
+
+    --primary-light-gray: #F9FAFB;
+    
+}
+
+body{
+    background-color: var(--primary-dark-gray);
+    margin: 5%;
+    padding: 3rem;
+    border: 4px dotted black;
+}
+
+h2{
+    color: var(--primary-light-yellow);
+    margin-bottom: 3rem;
+}
+
+.container {
+    width: 30%;
+    margin: auto;
+}
+
+input, label, textarea {
+    display: block;
+    
+}
+
+#txtInput {
+    margin-bottom: 1.6rem;
+    width: 250px;
+    height: 80px;
+    font-size: larger;
+}
+
+
+#btn-translate {
+    border: 3px solid var(--primary-light-gray);
+    color: var(--primary-light-gray);;
+    background-color: transparent;
+    border-radius: .45rem;
+    align-self: center;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 1.6rem;
+
+}
+
+#output {
+    font-size: 22px;
+    text-align: center;
+    font-style: italic;
+    border: 3px solid var(--primary-light-yellow);
+    color:  var(--primary-light-yellow);
+    align-self: center;
+    width: 250px;
+    height: 60px;
+    margin-top: 5%;
+    padding-top: .7rem;
+}
+
+img {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
